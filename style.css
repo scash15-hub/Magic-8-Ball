@@ -17,15 +17,15 @@
   z-index: 1;
 }
 
-/* smaller 8-ball */
 .bounce-img {
-  width: 80px;      /* smaller now */
+  width: 90px;   /* 🔥 bigger 8-ball */
   position: absolute;
   z-index: 2;
   animation:
-    bounce 3s ease-in-out infinite alternate,
+    bounce 4s ease-in-out infinite alternate,
     shake 0.4s infinite;
 }
+
 
 /* bounce in a medium-size central area */
 @keyframes bounce {
