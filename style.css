@@ -19,6 +19,8 @@ h1{
 
 .bounce-img {
   width: 200px;
+  width: 90px;   /* 🔥 bigger 8-ball */
+  position: absolute;
   z-index: 2;
   margin-top: 3dvb;
   top: 50%;
@@ -28,7 +30,10 @@ h1{
   animation:
     bounce 3s ease-in-out infinite alternate,
     shake 0.3s infinite;
+    bounce 4s ease-in-out infinite alternate,
+    shake 0.4s infinite;
 }
+
 
 
 
