@@ -4,7 +4,7 @@ function shakeMagic8Ball(){
     if(question === null){
         document.getElementById('response-text').innerText = 'Please Ask A Question!';
         document.getElementById('response-text').classList = 'lead text-danger';
-        document.getElementById('response-img').src = '8ball.jpg';   // in'' add new img link
+        document.getElementById('response-img').src = '_';   // in'' add new img link
     }
 
     if(!question.trim()){

@@ -1,56 +1,82 @@
 body {
-  background-image: url("Phone.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* correct full-height */
-  width: 100%;
-  min-height: 100vh;
-
-  /* remove bad properties */
-  position: relative;   /* not absolute */
-  overflow: hidden;      /* optional if you don’t want scrollbars */
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-h1{
-  margin-top: 10%;
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px #ff69b4;
+    margin-bottom: 2rem;
 }
 
-.bounce-img {
-  width: 200px;
-  width: 90px;   /* 🔥 bigger 8-ball */
-  position: absolute;
-  z-index: 2;
-  margin-top: 3dvb;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  animation:
-    bounce 3s ease-in-out infinite alternate,
-    shake 0.3s infinite;
-    bounce 4s ease-in-out infinite alternate,
-    shake 0.4s infinite;
+#response-text {
+    font-size: 2rem;
+    margin: 1rem 0;
+    transition: transform 0.3s, color 0.3s;
 }
 
-
-
-
-/* bounce in a medium-size central area */
-@keyframes bounce {
-  0%   { top: 110px; left: 110px; }
-  25%  { top: 110px; left: 200px; }
-  50%  { top: 200px; left: 200px; }
-  75%  { top: 200px; left: 110px; }
-  100% { top: 110px; left: 110px; }
+#response-text:hover {
+    transform: scale(1.1);
 }
 
-/* shake motion */
+#response-img {
+    width: 300px; /* keeps the 8 ball circular */
+    height: 200px;
+    margin-bottom: 2rem; /* adds space between ball and button */
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* centers the image */
+}
+
+#response-img:hover {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 0 20px #ff69b4;
+}
+
+/* Shake animation on 8 Ball image */
 @keyframes shake {
-  0%   { transform: translate(0, 0); }
-  25%  { transform: translate(-3px, 2px); }
-  50%  { transform: translate(3px, -2px); }
-  75%  { transform: translate(-2px, -3px); }
-  100% { transform: translate(0, 0); }
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-15deg); }
+    40% { transform: rotate(15deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shake {
+    animation: shake 0.2s;
+}
+
+/* Button styling */
+/* Button styling */
+button {
+    font-size: 1.2rem; /* smaller text */
+    padding: 0.5rem 1.5rem; /* smaller padding */
+    border-radius: 50px;
+    background-color: #fff; /* white background */
+    color: #ff69b4; /* pink text */
+    border: 2px solid #ff69b4;
+    transition: transform 0.6s, box-shadow 0.3s;
+    display: block;
+    margin: 0 auto; /* centers the button */
+}
+
+button:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 15px #ff69b4;
+}
+
+
+button:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 15px #ff69b4;
+}
+
+footer {
+    color: #fff;
+    text-shadow: 1px 1px #ff69b4;
+    margin-top: 2rem;
 }
