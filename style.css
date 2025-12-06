@@ -21,8 +21,8 @@ h1 {
 }
 
 #response-img {
-    width: 300px; /* keeps the 8 ball circular */
-    height: 200px;
+    width: 450px; /* keeps the 8 ball circular */
+    height: 300px;
     margin-bottom: 2rem; /* adds space between ball and button */
     transition: transform 0.5s, box-shadow 0.5s;
     border-radius: 50%;
@@ -79,4 +79,16 @@ footer {
     color: #fff;
     text-shadow: 1px 1px #ff69b4;
     margin-top: 2rem;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px #ff69b4;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff69b4;
+    text-shadow: 2px 2px #fff;
 }

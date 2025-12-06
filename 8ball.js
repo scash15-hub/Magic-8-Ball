@@ -4,7 +4,7 @@ function shakeMagic8Ball(){
     if(question === null){
         document.getElementById('response-text').innerText = 'Please Ask A Question!';
         document.getElementById('response-text').classList = 'lead text-danger';
-        document.getElementById('response-img').src = '_';   // in'' add new img link
+        document.getElementById('response-img').src = '8ball.png';   // in'' add new img link
     }
 
     if(!question.trim()){
@@ -16,54 +16,44 @@ function shakeMagic8Ball(){
 
     switch(randomNumber){
         case 0:
-            answer = 'Yes';
-            img = '_';   // in'' add new img link
-            color = 'text-success';
+            answer = '  ';
+            img = 'Yes.png';  
             break;
         case 1:
-            answer = 'No';
-            img = '_';   // in'' add new img link
-            color = 'text-danger';
+                        answer = '  ';
+            img = 'No.png';  
             break;
         case 2:
-            answer = 'Maybe';
-            img = '_';   // in'' add new img link
-            color = 'text-warning';
+                        answer = '  ';
+            img = 'Maybe.png';  
             break;
         case 3:
-            answer = 'Im Not Sure';
-            img = '_';   // in'' add new img link
-            color = 'text-info';
+                        answer = '  ';
+            img = 'ImNotSure.png';  
             break;
         case 4:
-            answer = 'Of Course';
-            img = '_';   // in'' add new img link
-            color = 'text-success-emphasis';
+                        answer = '  ';
+            img = 'OfCourse.png';  
             break;
         case 5:
-            answer = 'Ask Again';
-            img = '_';   // in'' add new img link
-            color = 'text-warning-emphasis';
+                        answer = '  ';
+            img = 'AskAgain.png';  
             break;
         case 6:
-            answer = 'Try Later';
-            img = '_';   // in'' add new img link
-            color = 'text-primary-emphasis';
+            answer = '  ';
+            img = 'TryLater.png';  
             break;
         case 7:
-            answer = 'Probably Not';
-            img = '_';   // in'' add new img link
-            color = 'text-danger-emphasis';
+            answer = '  ';
+            img = 'ProbablyNot.png';  
             break;
         case 8:
-            answer = 'I Dont Know';
-            img = '_';   // in'' add new img link
-            color = 'text-danger-subtle';
+            answer = '  ';
+            img = 'IDK.png';  
             break;
         case 9:
-            answer = 'Try Again';
-            img = '_';   // in'' add new img link
-            color = 'text-success-subtle';
+            answer = '  ';
+            img = 'MostLikely.png';  
             break;
     }
 
